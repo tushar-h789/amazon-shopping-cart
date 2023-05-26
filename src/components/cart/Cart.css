@@ -1,0 +1,9 @@
+.cart {
+  position: sticky;
+  top: 0;
+}
+
+.grand-total {
+  font-family: "Lato";
+  font-size: 21px;
+}
