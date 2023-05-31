@@ -32,6 +32,18 @@ const getShoppingCart = () => {
     return shoppingCart;
 }
 
+const getStoredCart =()=>{
+    let shoppingCart = {};
+
+    //get the shopping cart from local storage
+    const storedCart = localStorage.getItem('shopping-cart');
+    if (storedCart) {
+        shoppingCart = JSON.parse(storedCart);
+    }
+    return shoppingCart;
+}
+
+//remove shopping cart
 const deleteShoppingCart = () => {
     localStorage.removeItem('shopping-cart');
 }
@@ -39,6 +51,7 @@ const deleteShoppingCart = () => {
 export {
     addToDb,
     removeFromDb,
+    getStoredCart,
     getShoppingCart,
     deleteShoppingCart
 }
