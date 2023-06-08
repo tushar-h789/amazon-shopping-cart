@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cart.css";
+import { Link } from "react-router-dom";
 
 const Cart = (props) => {
   const { cart, clearCart, children } = props;
@@ -27,7 +28,8 @@ const Cart = (props) => {
       <p>Tax: ${tax}</p>
       <p className="grand-total">Grand Total: ${grandTotal.toFixed(2)}</p>
 
-      <button onClick={clearCart}>Clear Cart</button>
+      {/* <button onClick={clearCart}>Clear Cart</button> */}
+      <button className="clear-btn" onClick={clearCart}><Link to='/shipping'>Shipping</Link></button>
       {children}
     </div>
   );

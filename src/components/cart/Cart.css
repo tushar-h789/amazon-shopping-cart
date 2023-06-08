@@ -1,9 +1,17 @@
 .cart {
   position: sticky;
   top: 0;
+  color: black;
 }
 
 .grand-total {
   font-family: "Lato";
   font-size: 21px;
+}
+
+.clear-btn{
+  background-color: aquamarine;
+  padding: 12px 8px;
+  border-radius: 8px;
+  margin-left: 110px;
 }
